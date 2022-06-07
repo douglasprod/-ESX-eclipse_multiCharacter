@@ -3,7 +3,7 @@ all questions discord douglasprod#6686
 
 # eclipse_multiCharacter
 ## Requirements
-- [es_extended](https://github.com/zaphosting/esx_12)
+- [es_extended](https://github.com/zaphosting/esx_12) (you can choose any version which support multichar)
 
 ## Installation:
 
