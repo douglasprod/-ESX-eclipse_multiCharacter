@@ -16,6 +16,19 @@ Ensure `eclipse_multicharacter` in your server cfg.
 
 Configure `eclipse_multicharacter/client/config.lua` and  `eclipse_multicharacter/language.json` files.
 
+add to your database
+```
+CREATE TABLE `multicharacter_slots` (
+	`identifier` VARCHAR(60) NOT NULL,
+	`slots` INT(11) NOT NULL,
+	PRIMARY KEY (`identifier`) USING BTREE,
+	INDEX `slots` (`slots`) USING BTREE
+) ENGINE=InnoDB;
+
+ALTER TABLE `users` ADD COLUMN
+	`disabled` TINYINT(1) NULL DEFAULT '0';
+```
+
 Ready! Start server and enjoy!
 
 For more questions douglasprod#6686 && https://discord.gg/8nXR6rfB2C
